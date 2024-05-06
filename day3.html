@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fun Web Page</title>
+        <style>
+            body 
+            {background-color: white;
+            } 
+            @media (max-width:400px){
+                body {background: dodgerblue;
+            }
+        }
+        
+            div {
+                border: 1px solid black;
+                border-color: peachpuff;
+                color:black;
+                width: 200px;
+            }
+            .resizes {
+                margin-top: 20px;
+                height: 100px;
+                width: 100px;
+                background-color: orange;
+                border: 1px solid black;
+            }
+            .resizes {
+                height:400px;
+                width:400px;
+            }
+            .animate {
+                height: 100px;
+                width: 100px;
+                background-color: dodgerblue;
+                position: relative;
+                animation-name: animation1;
+            }
+            @keyframes animation1 {
+                0% {background-color: dodgerblue; left:0px; top: 0px;}
+                25% {background-color: yellow; left: 200px;top: 0px;}
+                50% {background-color: red; left: 200px;top: 200px;}
+                75% {background-color: green; left: 0px;top: 0px;}
+                100% {background-color: dodgerblue; left:0px; top: 0px;}
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <button type="button" popovertarget="my_popover"> show auto popover</button>
+
+        <button type="button" popovertarget="my_popover2"> show manual popover </button>
+
+        <button type="button" popovertarget="my_popover2"> hide popover button</button>
+
+        <div popover="auto" id="my_popover" >
+            I am an American Aquarium drinker
+        </div>
+
+        <div popover= "manual" id="my_popover2">
+            I am just a teenage dirtbag  
+        </div>
+    </body>
+
+    
+
+</html>

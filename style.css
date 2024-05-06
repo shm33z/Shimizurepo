@@ -1,0 +1,66 @@
+h1 {
+    color: red;
+    background-color: purple;    
+}
+h2 {
+    color: darkgreen;
+}
+
+a {
+    color: darkred;
+}
+a:hover, div:hover {
+    color: red;
+    background-color: aqua;
+}
+
+#center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#boxexample {
+    background-color: white;
+    border-color: red;
+    border-width: 20px;
+    border-style: solid; 
+    margin-top: 70px;       
+    margin-left: 70px;
+    padding: 40px;
+}
+
+div {
+    background-color: lightblue;
+    color: darkslategray;
+    width: 300px;
+}
+span {
+    background-color: peru;
+    color: white;
+    width: 300px;
+}
+
+#divno9 {
+    /*background-color: blueviolet;*/
+    color: white;
+}
+
+/* use . @ front for class-level */
+.boxdiv {
+    background-color: green;
+    color: white;
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;  
+}
+
+/* ".boxdiv h1" will affect all h1 descendants of boxdiv */
+/* ".boxdiv > h1" will affect only immediate children */
+.boxdiv > h1 {
+    background-color: red;
+    color: black;
+
+}
+
